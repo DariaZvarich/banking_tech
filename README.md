@@ -4,10 +4,48 @@ Banking Tech test
  # 1 Approached designing solution to the problem.
 
     ## 1. Describe the Problem:
-    
+
+        Create a simplified banking application that allows for deposits, withdrawals, and statement printing in a table format. 
+        It should handle errors, maintain transaction history, and serve as a coding exercise or assessment tool.
+
     ## 2. Design the Class and Methods:
 
+        * Constructor
+            Parameters: None
+            Description: Initializes an instance of the Banking class with an empty array to store transactions.
 
+        * deposit Method
+            Parameters: amount(Number): The amount to be deposited.
+                        date(String): The date of the deposit in the format 'dd/mm/yyyy'.
+            Return Value: None
+            Description: Adds a deposit transaction to the transaction history. Validates the amount and date. Updates the balance.
+
+        * withdraw Method
+            Parameters: amount (Number): The amount to be withdrawn.
+                        date (String): The date of the withdrawal in the format 'dd/mm/yyyy'.
+            Return Value: None
+            Description: Adds a withdrawal transaction to the transaction history. Validates the amount, checks for insufficient balance, and updates the balance.
+
+        * calculateBalance Method
+            Parameters: None
+            Return Value: Number
+            Description: Calculates and returns the current account balance based on the transaction history.
+
+        * getTransactions Method
+            Parameters: None
+            Return Value: Array of Objects
+            Description: Returns an array containing all the transaction objects in the transaction history.
+
+        * printStatement Method
+            Parameters: None
+            Return Value: None
+            Description: Prints the account statement in a table format, including date, credit, debit, and balance for each transaction.
+
+        * validDate Method
+            Parameters:
+            date (String): The date to be validated.
+            Return Value: Boolean
+            Description: Validates if the provided date is in the correct format 'dd/mm/yyyy'.
 
  # 2 Description of the code structure.
 
@@ -61,4 +99,4 @@ Banking Tech test
 
  # 4 Screenshots of running app.
 
- 
+ Look in the folder screenshots
