@@ -19,7 +19,7 @@ Banking Tech test
 
  # 2 Description of the code structure.
         To plan and design this program I used a Design Recipe. To see more description look at 
-        /lib/designRecipe.md
+        lib/designRecipe.md
 
 
  # 3 Description how to install and run code and tests.

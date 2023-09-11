@@ -2,7 +2,7 @@
     - This class represents individual transactions within the banking system. It contains the following properties:
 
         * date (Date): Represents the date of the transaction.
-        
+
         * type (String): Indicates the type of transaction, which can be either 'credit' or 'debit'.
 
         * amount (Number): Represents the transaction amount, which can be a positive number for 
@@ -23,14 +23,14 @@
                             - date (String): The date of the deposit in the format 'dd/mm/yyyy'.
             - Return Value: None
             - Description:  Adds a deposit transaction to the transaction history. 
-                            Validates the amount and date. Updates the balance.
+                            Validates the amount, checks invalid deposit amount, and updates the balance. Updates the balance.
 
         * withdraw Method:
             - Parameters:   - amount (Number): The amount to be withdrawn.
                             - date (String): The date of the withdrawal in the format 'dd/mm/yyyy'.
             - Return Value: None
             - Description: Adds a withdrawal transaction to the transaction history. 
-                            Validates the amount, checks for insufficient balance, and updates the balance.
+                            Validates the amount, checks for insufficient balance or invalid withdrawal amount, and updates the balance.
 
         * calculateBalance Method:
             - Parameters: None
